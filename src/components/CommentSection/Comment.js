@@ -9,7 +9,7 @@ const Comment = props => {
       <span className="user">{props.comment.username}</span>
       {' '}
       <span className="comment">{props.comment.text}</span>
-    </div>
+  </div>
   );
 };
 

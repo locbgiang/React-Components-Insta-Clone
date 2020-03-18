@@ -10,7 +10,6 @@ import "./App.css";
 import SearchBarC from "./components/SearchBar/SearchBarContainer.js";
 import PostPage from "./components/PostsContainer/PostsPage.js";
 
-
 const App = (props) => {
   return (
     <div className="App">

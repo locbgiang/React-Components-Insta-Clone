@@ -2,10 +2,9 @@
 // console.log your props and see how to add likes to this component so that it will update when you click the icon.
 // HINT: You will need to add an onClick event pass through your props and update the hard coded Likes
 import React from "react";
+import Heart from "../../assets/heart.svg";
 
 const LikeSection = props => {
-  console.log(props);
-  
   return (
     <div>
     <div
@@ -13,15 +12,16 @@ const LikeSection = props => {
       key="likes-icons-container"
     >
       <div className="like-section-wrapper">
-        <i className="far fa-heart" />
+        <i className="far fa-heart"/>
+        <img className="Heart" src={Heart} onClick={()=>props.setLikes(props.likes+1)}/>
       </div>
       <div className="like-section-wrapper">
         <i className="far fa-comment" />
       </div>
     </div>
     <p className="like-number">
-      
-      likes</p>
+      {props.likes} likes
+    </p>
 </div>
   )
 };
