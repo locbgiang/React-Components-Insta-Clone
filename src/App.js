@@ -8,14 +8,14 @@ import React from "react";
 import "./App.css";
 // import the PostsPage and SearchBar and add them to the App
 import SearchBarC from "./components/SearchBar/SearchBarContainer.js";
-import Post from "./components/PostsContainer/Post.js";
+import PostPage from "./components/PostsContainer/PostsPage.js";
 
-const App = () => {
 
+const App = (props) => {
   return (
     <div className="App">
       <SearchBarC />
-      <Post />
+      <PostPage />
     </div>
   );
 };
